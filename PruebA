@@ -1,0 +1,130 @@
+import random
+
+aleatorio = random.randrange(0, 7)
+print("1)Piedra", "2)Papel", "3)Tijera", "4)Lagarto", "5)Spock", "6)Papa", "7)Heavy", sep="\n")
+opción = int (input("Ingresa tu elección: "))
+
+if opción == 1:
+    jugador = "Piedra"
+elif opción == 2:
+    jugador = "Papel"
+elif opción == 3:
+    jugador = "Tijera"
+elif opción == 4:
+    jugador = "Lagarto"
+elif opción == 5:
+    jugador = "Spock"
+elif opción == 6:
+    jugador = "Papa"
+elif opción == 7:
+    jugador = "Heavy"
+
+    
+if aleatorio == 0:
+    maquina = "Piedra"
+elif aleatorio == 1:
+    maquina = "Papel"
+elif aleatorio == 2:
+    maquina = "Tijera"
+elif aleatorio == 3:
+    maquina = "Lagarto"
+elif aleatorio == 4:
+    maquina = "Spock"
+elif aleatorio == 5:
+    maquina = "Papa"
+elif aleatorio == 6:
+    maquina = "Heavy"
+
+print ("La máquina eligio: ", maquina)
+print ("El resultado final es: ")
+
+if jugador == "Tijera" and maquina == "Papel":
+  print ("El usuario gana, tijera corta papel")
+elif jugador == "Papel" and maquina == "Piedra":
+  print ("El usuario gana, papel envuelve a piedra")
+elif jugador == "Piedra" and maquina == "Lagarto":
+  print ("El usuario gana, piedra machaca lagarto")
+elif jugador == "Lagarto" and maquina == "Spock":
+  print ("El usuario gana, lagarto envenena a Spock")
+elif jugador == "Spock" and maquina == "Tijera":
+  print ("El usuario gana, Spock rompe tijera")
+elif jugador == "Tijera" and maquina == "Lagarto":
+  print ("El usuario gana, tijera decapita lagarto")
+elif jugador == "Lagarto" and maquina == "Papel":
+  print ("El usuario gana, lagarto se come a papel")
+elif jugador == "Papel" and maquina == "Spock":
+  print ("Gana usuario papel elimina a Spock")
+elif jugador == "Spock" and maquina == "Piedra":
+  print ("El usuario gana, Spock pulveriza piedra")
+elif jugador == "Piedra" and maquina == "Tijera":
+  print ("El usuario gana, piedra machaca tijera")
+
+elif jugador == "Piedra" and maquina == "Heavy":
+  print ("El usuario gana, piedra lastima heavy")
+elif jugador == "Tijera" and maquina == "Heavy":
+  print ("El usuario gana, tijera corta heavy")
+elif jugador == "Papel" and maquina == "Heavy":
+  print ("El usuario gana, papel elimina heavy")
+elif jugador == "Lagarto" and maquina == "Papa":
+  print ("El usuario gana, lagarto envenena papa")
+elif jugador == "Spock" and maquina == "Papa":
+  print ("El usuario gana, Spock elimina papa")
+elif jugador == "Papa" and maquina == "Piedra":
+  print ("El usuario gana, papa elimina piedra")
+elif jugador == "Papa" and maquina == "Papel":
+  print ("El usuario gana, papa elimina papel")
+elif jugador == "Papa" and maquina == "Tijera":
+  print ("El usuario gana, papa elimina tijera")
+elif jugador == "Heavy" and maquina == "Lagarto":
+  print ("El usuario gana, heavy elimina lagarto")
+elif jugador == "Heavy" and maquina == "Papa":
+  print ("El usuario gana, heavy elimina papa")
+elif jugador == "Heavy" and maquina == "Spock":
+  print ("El usuario gana, heavy elimina Spock")
+
+if maquina == "Tijera" and jugador == "Papel":
+  print ("Gana maquina, tijera corta papel")
+elif maquina == "Papel" and jugador == "Piedra":
+  print ("Gana maquina, papel envuelve a piedra")
+elif maquina == "Piedra" and jugador == "Lagarto":
+  print ("Gana maquina, piedra machaca lagarto")
+elif maquina == "Lagarto" and jugador == "Spock":
+  print ("Gana maquina, lagarto envenena a Spock")
+elif maquina == "Spock" and jugador == "Tijera":
+  print ("Gana maquina, Spock rompe tijera")
+elif maquina == "Tijera" and jugador == "Lagarto":
+  print ("Gana maquina, tijera decapita lagarto")
+elif maquina == "Lagarto" and jugador == "Papel":
+  print ("Gana maquina, lagarto se come a papel")
+elif maquina == "Papel" and jugador == "Spock":
+  print ("Gana maquina, papel elimina a Spock")
+elif maquina == "Spock" and jugador == "Piedra":
+  print ("Gana maquina, Spock pulveriza piedra")
+elif maquina == "Piedra" and jugador == "Tijera":
+  print ("Gana maquina, piedra machaca tijera")
+
+elif maquina == "Piedra" and jugador == "Heavy":
+  print ("El usuario gana, piedra lastima heavy")
+elif maquina == "Tijera" and jugador == "Heavy":
+  print ("El usuario gana, tijera corta heavy")
+elif maquina == "Papel" and jugador == "Heavy":
+  print ("El usuario gana, papel elimina heavy")
+elif maquina == "Lagarto" and jugador == "Papa":
+  print ("El usuario gana, lagarto envenena papa")
+elif maquina == "Spock" and jugador == "Papa":
+  print ("El usuario gana, Spock elimina papa")
+elif maquina == "Papa" and jugador == "Piedra":
+  print ("El usuario gana, papa elimina piedra")
+elif maquina == "Papa" and jugador == "Papel":
+  print ("El usuario gana, papa elimina papel")
+elif maquina == "Papa" and jugador == "Tijera":
+  print ("El usuario gana, papa elimina tijera")
+elif maquina == "Heavy" and jugador == "Lagarto":
+  print ("El usuario gana, heavy elimina lagarto")
+elif maquina == "Heavy" and jugador == "Papa":
+  print ("El usuario gana, heavy elimina papa")
+elif maquina == "Heavy" and jugador == "Spock":
+  print ("El usuario gana, heavy elimina Spock")
+
+elif maquina == jugador:
+  print ("Empate")
